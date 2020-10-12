@@ -2,46 +2,72 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-
-    <title>todos</title>
+    <title  >todos</title>
   </head>
   <body>
-          <h1>todos</h1>
-    <div class="form-group">
-        <form id="form_new_task" class="form-inline" >
-                        <div class="form-group">
-                             <button class="button"type="submit" id="submit_btn"> \/ </button>
-                             <input type="text" value="What needs to be done?" class="form-control" >
-                            </div>
-<table>
-  <tr><td><input name="checkbox" type="checkbox" /></td>
-      <td>HTML</td>
-      <td><button type="button" class="close" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-          </button></td></tr>
-  <tr><td><input name="checkbox" type="checkbox" checked /></td>
-      <td> <s>CSS</s></td>
-      <td><button type="button" class="close" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-          </button></td></tr>
-  <tr><td><input name="checkbox" type="checkbox" /></td>
-      <td>JS</td>
-      <td><button type="button" class="close" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-          </button></td></tr>
-  <tr><td><input name="checkbox" type="checkbox" /></td>
-      <td>JS tools</td>
-      <td><button type="button" class="close" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-          </button></td></tr>
-</table>
-    </div>
-<div class="foot">
-  3 items left
-     <button class="button"type="submit" id="submit_btn"> All </button>
-     <button class="button"type="submit" id="submit_btn"> Active </button>
-     <button class="button"type="submit" id="submit_btn"> Completed </button>
-     <button class="button"type="submit" id="submit_btn"> Clear completed </button>
-</div>
+    <header class="todo-head" aria-label="todos">todos</header>
+    <main>
+    <section class="add-task-form">
+      <form id="form_new_task" class="form-inline" >
+            <button class="button"type="submit" id="submit_btn" aria-label="submit your new task"> \/ </button>
+            <input type="text" value="What needs to be done?" class="form-control" aria-label="input new task" >
+    </section>
+    <section class="todo-list">
+      <ul>
+          <li>
+            <div class="todo-item">
+              <input name="checkbox" type="checkbox" aria-label="task completed" />
+              <span class="todo-item-text">HTML</span>
+              <button type="button" class="close" aria-label="Close">
+                      <span aria-hidden="true">&times;</span></button>
+            </div>
+          </li>
+          <li>
+            <div class="todo-item">
+              <input name="checkbox" type="checkbox" aria-label="task completed" checked />
+              <span class="todo-item-text"><s>CSS</s></span>
+              <button type="button" class="close" aria-label="Close">
+                      <span aria-hidden="true">&times;</span></button>
+            </div>
+          </li>
+          <li>
+            <div class="todo-item">
+              <input name="checkbox" type="checkbox" aria-label="task completed" />
+              <span class="todo-item-text">JS</span>
+              <button type="button" class="close" aria-label="Close">
+                      <span aria-hidden="true">&times;</span></button>
+            </div>
+          </li>
+          <li>
+            <div class="todo-item">
+              <input name="checkbox" type="checkbox" aria-label="task completed" />
+              <span class="todo-item-text">JS tools</span>
+              <button type="button" class="close" aria-label="Close">
+                      <span aria-hidden="true">&times;</span></button>
+            </div>
+          </li>
+        </ul></section>
+    <section class="todo-footer">
+          <div class="nmb-task">
+            3 items left
+          </div>
+          <div class="filter">
+            <input type="radio" id="contactChoice1"
+            name="filter" >
+            <label for="contactChoice1">All</label>
+
+            <input type="radio" id="contactChoice2"
+            name="filter" >
+            <label for="contactChoice2">Active</label>
+
+            <input type="radio" id="contactChoice3"
+            name="filter" >
+            <label for="contactChoice3">Completed</label>
+          </div>
+          <div class="clear">
+            <button type="submit">Clear completed</button>
+          </div>
+    </section>
+    </main>
   </body>
 </html>
