@@ -1,1 +1,0 @@
-# Juliya_Sladkovskaya
