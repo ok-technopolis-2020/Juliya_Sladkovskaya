@@ -10,14 +10,15 @@
     <main>
     <section class="add-task-form">
       <form class="form-inline" >
-            <button class="button task-form" type="button" aria-label="submit your new task"> \/ </button>
+            <button class="button task-form" type="button" aria-label="submit your new task"><i class="icon" ></i></button>
             <input type="text" value="What needs to be done?" class="form-control" aria-label="input new task" >
     </section>
+    <hr />
     <section class="todo-list">
       <ul>
           <li>
             <div class="todo-item">
-              <input name="checkbox" type="checkbox" aria-label="task completed" />
+              <label class="checkbox-label"><input class="checkbox-label" type="checkbox" aria-label="task completed" /><span class="checkbox-span" ></span></label>
               <span class="todo-item-text">HTML</span>
               <button type="button" class="close" aria-label="Close">
                       <span aria-hidden="true">&times;</span></button>
@@ -25,7 +26,7 @@
           </li>
           <li>
             <div class="todo-item">
-              <input name="checkbox" type="checkbox" aria-label="task completed" checked />
+              <label class="checkbox-label"><input class="checkbox-label" type="checkbox" aria-label="task completed" checked /><span class="checkbox-span"></span></label>
               <span class="todo-item-text"><s>CSS</s></span>
               <button type="button" class="close" aria-label="Close">
                       <span aria-hidden="true">&times;</span></button>
@@ -33,7 +34,7 @@
           </li>
           <li>
             <div class="todo-item">
-              <input name="checkbox" type="checkbox" aria-label="task completed" />
+              <label class="checkbox-label"><input class="checkbox-label" type="checkbox" aria-label="task completed" /><span class="checkbox-span"></span></label>
               <span class="todo-item-text">JS</span>
               <button type="button" class="close" aria-label="Close">
                       <span aria-hidden="true">&times;</span></button>
@@ -41,7 +42,7 @@
           </li>
           <li>
             <div class="todo-item">
-              <input name="checkbox" type="checkbox" aria-label="task completed" />
+              <label class="checkbox-label"><input class="checkbox-label" type="checkbox" aria-label="task completed" /><span class="checkbox-span"></span></label>
               <span class="todo-item-text">JS tools</span>
               <button type="button" class="close" aria-label="Close">
                       <span aria-hidden="true">&times;</span></button>
@@ -49,13 +50,14 @@
           </li>
         </ul>
       </section>
+      <hr />
     <section class="todo-footer">
           <div class="nmb-task">
             3 items left
           </div>
           <div class="filter">
             <input type="radio" id="contactChoice1"
-            name="filter" >
+            name="filter" checked>
             <label for="contactChoice1">All</label>
 
             <input type="radio" id="contactChoice2"
@@ -67,7 +69,7 @@
             <label for="contactChoice3">Completed</label>
           </div>
           <div class="clear">
-            <button type="button">Clear completed</button>
+            <button type="button" class="clear">Clear completed</button>
           </div>
     </section>
     </main>
