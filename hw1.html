@@ -2,14 +2,15 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title  >todos</title>
   </head>
   <body>
     <header class="todo-head" aria-label="todos">todos</header>
     <main>
     <section class="add-task-form">
-      <form id="form_new_task" class="form-inline" >
-            <button class="button"type="submit" id="submit_btn" aria-label="submit your new task"> \/ </button>
+      <form class="form-inline" >
+            <button class="button task-form" type="button" aria-label="submit your new task"> \/ </button>
             <input type="text" value="What needs to be done?" class="form-control" aria-label="input new task" >
     </section>
     <section class="todo-list">
@@ -46,7 +47,8 @@
                       <span aria-hidden="true">&times;</span></button>
             </div>
           </li>
-        </ul></section>
+        </ul>
+      </section>
     <section class="todo-footer">
           <div class="nmb-task">
             3 items left
@@ -65,7 +67,7 @@
             <label for="contactChoice3">Completed</label>
           </div>
           <div class="clear">
-            <button type="submit">Clear completed</button>
+            <button type="button">Clear completed</button>
           </div>
     </section>
     </main>
