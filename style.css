@@ -1,17 +1,14 @@
 html {
   background: #eaeaea;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
   font-family: URW Chancery L, cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header {
   color:grey;
   font-size: 100px;
-  padding-left: 40%;
+  text-align: center;
 }
 main {
   background: white;
@@ -21,36 +18,55 @@ main {
   color: #2f2e2e;
   border-radius: 10px;
 }
-div {
-  display: inline;
+.footer {
+  display: inline-flex;
+  padding-bottom: 30px;
 }
 ul {
   margin-left: 0;
   padding-left: 0;
 }
-
 li {
   list-style-type: none;
 }
-
 .clear {
   background-color: white;
   color: #a5a3a3;
   border: 1px solid #cccccc;
   border-radius: 3px;
   padding: 0;
+  height: 25px;
+}
+.clear:hover {
+  color: black;
+  background-color: #f2c0c0;
+  border-radius: 10px;
+}
+.clear:focus {
+  color: black;
+  background-color: #f46565;
+}
+.icon {
+  background-image: url(form.svg);
+  padding-left : 50px;
+  padding-top : 10px;
+  padding-bottom : 10px;
+  background-repeat : no-repeat;
 }
 .task-form {
 border: 0;
 background-color: white;
 width: 80px;
 }
-.icon {
-background-image: url(form.png);
-padding-left : 60px;
-padding-top : 10px;
-padding-bottom : 10px;
-background-repeat : no-repeat;
+.task-form:hover {
+  background-color: #c8ebc8;
+  border-radius: 10px;
+  border-color: green;
+}
+.task-form:focus {
+  background-color: #95e698;
+  border-radius: 10px;
+  border-color: green;
 }
 .close {
   border: 0;
@@ -59,7 +75,6 @@ background-repeat : no-repeat;
   border: 0;
   color: black;
 }
-
 .task-form {
   height: 40px;
   width: 60px;
@@ -74,10 +89,10 @@ background-repeat : no-repeat;
 .form-control {
    border: 1px solid #cccccc;
    border-radius: 3px;
-   background: #ffffff !important;
+   background: #ffffff;
    outline: none;
    height: 40px;
-   width: 600px;
+   width: 50%;
    color: #cccccc;
    font-size: 15px;
    padding-left: 0;
@@ -90,16 +105,15 @@ background-repeat : no-repeat;
   color:grey;
   padding-right: 40px;
 }
-
 .filter {
 	display: inline-block;
 	margin-right: 10px;
   font-size: 20px;
 }
-.filter input[type=radio] {
+.filter-input {
 	display: none;
 }
-.filter label {
+.filter > label {
 	display: inline-block;
 	cursor: pointer;
 	padding: 0px 35px;
@@ -108,17 +122,16 @@ background-repeat : no-repeat;
 	border-radius: 6px;
 	user-select: none;
 }
-.filter input[type=radio]:checked + label {
+.filter-input:checked + label {
 	background: #efeaea;
 }
 .filter label:hover {
 	color: #666;
 }
-.filter input[type=radio]:disabled + label {
+.filter-input:disabled + label {
 	background: #efefef;
 	color: #666;
 }
-
 .checkbox-label {
  width: 35px;
  height: 35px;
@@ -128,21 +141,21 @@ background-repeat : no-repeat;
 span.todo-item-text {
   margin-left: 25px;
 }
-input.checkbox-label {
+input.checkbox-label-input {
   display:none;
 }
 span.checkbox-span {
-  width: 35px !important;
+  width: 35px ;
+  height: 35px;
   margin-left: 10px;
 }
-input[type="checkbox"] + span {
+.checkbox-label-input + span {
     position: absolute;
-    left: 10;
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(notcheck.png) no-repeat;
+    background: url(notcheck.svg) no-repeat;
 }
-input[type="checkbox"]:checked + span {
-    background: url(check.png) no-repeat;
+.checkbox-label-input:checked + span {
+    background: url(check.svg) no-repeat;
 }
