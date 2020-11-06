@@ -1,25 +1,26 @@
-html {
+.todo-body-block {
   background: rgba(0, 0, 0, 0.05);
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content:flex-start;
+  min-width: 556px;
+  min-height: 380px;
 }
-header {
-  margin-top: 46.5px;
+.todo-head {
+  margin-top: 46.5px; /*значение по макету*/
   color: #CCCCCC;
   font-size: 100px;
   text-align: center;
   font-weight: 200;
 }
-main {
+.todo-main-block {
   display: flex;
   flex-direction: column;
-  margin: 0 -5px;
+  border: 1px solid #E6E6E6;
   background-color: #FFFFFF;
-  width: 558px;
-  height: auto;
+  width: 556px;
   font-size: 24px;
   font-weight: 300;
   line-height: 21px;
@@ -28,17 +29,19 @@ main {
 .todo-footer {
   display: flex;
   justify-content: space-between;
-  width: 558px;
+  width: 531px;
   color: #888888;
   font-weight: 300;
   font-size: 14px;
   display: inline-flex;
   align-items: center;
-  padding-bottom: 12.5px;
-  padding-top: 12.5px;
+  padding: 12.5px;
   height: 43px;
   background: #FFFFFF;
-  box-shadow: inset 0px 1px 0px #E6E6E6;
+  border: 0;
+  border-top: 1px;
+  border-style: solid;
+  border-color: #E6E6E6;
 }
 .todo-list {
   margin-top: -25px;
@@ -46,11 +49,9 @@ main {
   margin-left: 0;
   padding-left: 0;
 }
-ul{
+.todo-list-ul{
   margin-left: 0;
   padding-left: 0;
-}
-li {
   list-style-type: none;
 }
 .clear {
@@ -71,56 +72,66 @@ li {
   background-color: #f46565;
 }
 .icon {
-  background-image: url(form.svg);
-  padding-left : 50px;
-  padding-top : 10px;
-  padding-bottom : 10px;
+  background-image: url(Frame1.svg);
+  padding-left : 20px;
   background-repeat : no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.icon-close {
+  background-image: url(Frame3.svg);
+  padding-left: 30px;
+  background-repeat : no-repeat;
+  background-position: center;
 }
 .task-form {
 border: 0;
 background-color: white;
-width: 80px;
+height: 40px;
+width: 60px;
 }
 .close {
   margin-right: 10px;
   margin-left: auto;
-  background-color: white;
-  color:  white;
+  visibility: hidden;
   border: 0;
   padding: 0;
-  font-size: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.001);
+
+}
+.todo-item:hover > .close{
+  visibility: visible;
 }
 .task-form:hover {
   background-color: #c8ebc8;
   border-radius: 10px;
 }
-.task-form {
-  height: 40px;
-  width: 60px;
-}
+
 .form-inline {
   display: flex;
   align-items: center;
+  width: 556px;
   justify-content: flex-end;
-   border: 1px solid #cccccc;
-   background: #ffffff;
-   outline: none;
-   height: 66px;
-   color: #cccccc;
-   font-size: 15px;
-   padding-left: 0;
+  border: 1px solid #E6E6E6;
+  background: #ffffff;
+  outline: none;
+  height: 68px;
+  color: #E6E6E6;
+  font-size: 15px;
+  margin: -1px 0px 5px -1px;
 }
 .form-control {
-   width:100%;
-   border: 1px solid #ffffff;
-   color: #cccccc;
-   font-family: Roboto;
+   width: 100%;
+   border: 0;
+   color: #CCCCCC;
+   font-family: 'Roboto';
    font-style: italic;
    font-weight: 300;
    font-size: 24px;
-   height: 26px;
    padding-left: 0;
+   padding-top: 1px;
+   height: 66px;
 }
 .form-control:focus {
   color: #2f2e2e;
@@ -157,31 +168,26 @@ width: 80px;
  position: relative;
 }
 span.todo-item-text {
-  margin-left: 25px;
-}
-.todo-item {
-  width: 100%;
+  margin-left: 35px;
 }
 .todo-item {
   display: flex;
   align-items: center;
-  height: 64px;
   background: #FFFFFF;
-  box-shadow: inset 0px -1px 0px #E6E6E6;
+  border: 0;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #E6E6E6;
 }
 .todo-item:hover{
   background-color: rgba(0, 0, 0, 0.02);
-}
-.todo-item:hover > .close{
-  background-color: rgba(0, 0, 0, 0.02);
-  color: rgba(0, 0, 0, 0.5);
 }
 input.checkbox-label-input {
   display:none;
 }
 span.checkbox-span {
-  width: 35px ;
-  height: 35px;
+  width: 38px ;
+  height: 38px;
   margin-left: 10px;
 }
 .checkbox-label-input + span {
@@ -189,8 +195,10 @@ span.checkbox-span {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(notcheck.svg) no-repeat;
+    background: url(Ellipse1.svg) no-repeat;
 }
 .checkbox-label-input:checked + span {
-    background: url(check.svg) no-repeat;
+    background-image: url(Frame2.svg), url(Ellipse2.svg);
+    background-position: center;
+
 }

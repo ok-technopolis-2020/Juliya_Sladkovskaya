@@ -3,48 +3,45 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title  >todos</title>
   </head>
-  <body>
+  <body class="todo-body-block">
       <header class="todo-head" aria-label="todos">todos</header>
-      <main>
+      <main class="todo-main-block">
       <section class="add-task-form">
         <form class="form-inline" >
               <button tabindex="1" class="button task-form" type="button" aria-label="submit your new task"><i class="icon" ></i></button>
               <input tabindex="2" type="text" value="What needs to be done?" class="form-control" aria-label="input new task" >
       </section>
       <section class="todo-list">
-        <ul >
+        <ul class="todo-list-ul">
             <li>
               <div class="todo-item">
                   <label tabindex="4" class="checkbox-label"><input class="checkbox-label-input" type="checkbox" aria-label="task completed" /><span class="checkbox-span" ></span></label>
                   <span class="todo-item-text">HTML</span>
-                  <button tabindex="5"tabindex type="button" class="close" aria-label="Close">
-                        <span aria-hidden="true">&times;</span></button>
+                  <button tabindex="5" class="button close" type="button" aria-label="Close task"><i class="icon-close" ></i></button>
               </div>
             </li>
             <li>
               <div class="todo-item">
                 <label tabindex="6" class="checkbox-label"><input class="checkbox-label-input" type="checkbox" aria-label="task completed" checked /><span class="checkbox-span"></span></label>
                 <span class="todo-item-text"><s>CSS</s></span>
-                <button tabindex="7" type="button" class="close" aria-label="Close">
-                        <span aria-hidden="true">&times;</span></button>
+                <button tabindex="7" class="button close" type="button" aria-label="Close task"><i class="icon-close" ></i></button>
               </div>
             </li>
             <li>
               <div class="todo-item">
                 <label tabindex="8" class="checkbox-label"><input class="checkbox-label-input" type="checkbox" aria-label="task completed" /><span class="checkbox-span"></span></label>
                 <span class="todo-item-text">JS</span>
-                <button tabindex="9"type="button" class="close" aria-label="Close">
-                        <span aria-hidden="true">&times;</span></button>
+                <button tabindex="9" class="button close" type="button" aria-label="Close task"><i class="icon-close" ></i></button>
               </div>
             </li>
             <li>
               <div class="todo-item">
                 <label tabindex="10" class="checkbox-label"><input class="checkbox-label-input" type="checkbox" aria-label="task completed" /><span class="checkbox-span"></span></label>
                 <span class="todo-item-text">JS tools</span>
-                <button tabindex="11" type="button" class="close" aria-label="Close">
-                        <span aria-hidden="true">&times;</span></button>
+                <button tabindex="11" class="button close" type="button" aria-label="Close task"><i class="icon-close" ></i></button>
               </div>
             </li>
           </ul>
