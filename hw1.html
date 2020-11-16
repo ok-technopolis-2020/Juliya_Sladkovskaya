@@ -11,37 +11,37 @@
       <main class="todo-main-block">
       <section class="add-task-form">
         <form class="form-inline" >
-              <button tabindex="1" class="button task-form" type="button" aria-label="submit your new task"><i class="icon" ></i></button>
-              <input tabindex="2" type="text" value="What needs to be done?" class="form-control" aria-label="input new task" >
+              <button class="button task-form" type="button" aria-label="submit your new task"><i class="icon" ></i></button>
+              <input type="text" value="What needs to be done?" class="form-control" aria-label="input new task" >
       </section>
       <section class="todo-list">
         <ul class="todo-list-ul">
-            <li>
+            <li class="todo-list-li">
               <div class="todo-item">
-                  <label tabindex="4" class="checkbox-label"><input class="checkbox-label-input" type="checkbox" aria-label="task completed" /><span class="checkbox-span" ></span></label>
-                  <span class="todo-item-text">HTML</span>
-                  <button tabindex="5" class="button close" type="button" aria-label="Close task"><i class="icon-close" ></i></button>
+                    <input id="item-input-1" class="checkbox-label-input" type="checkbox" aria-label="task completed">
+                    <label for="item-input-1" class="todo-item-text">HTML</label>
+                    <button  class="button close" type="button" aria-label="Close task"></button>
               </div>
             </li>
-            <li>
+            <li class="todo-list-li">
               <div class="todo-item">
-                <label tabindex="6" class="checkbox-label"><input class="checkbox-label-input" type="checkbox" aria-label="task completed" checked /><span class="checkbox-span"></span></label>
-                <span class="todo-item-text"><s>CSS</s></span>
-                <button tabindex="7" class="button close" type="button" aria-label="Close task"><i class="icon-close" ></i></button>
+                    <input id="item-input-2" class="checkbox-label-input" type="checkbox" aria-label="task completed">
+                    <label for="item-input-2" class="todo-item-text">CSS</label>
+                    <button  class="button close" type="button" aria-label="Close task"></button>
               </div>
             </li>
-            <li>
+            <li class="todo-list-li">
               <div class="todo-item">
-                <label tabindex="8" class="checkbox-label"><input class="checkbox-label-input" type="checkbox" aria-label="task completed" /><span class="checkbox-span"></span></label>
-                <span class="todo-item-text">JS</span>
-                <button tabindex="9" class="button close" type="button" aria-label="Close task"><i class="icon-close" ></i></button>
+                    <input id="item-input-3" class="checkbox-label-input" type="checkbox" aria-label="task completed">
+                    <label for="item-input-3" class="todo-item-text">JS</label>
+                    <button  class="button close" type="button" aria-label="Close task"></button>
               </div>
             </li>
-            <li>
+            <li class="todo-list-li">
               <div class="todo-item">
-                <label tabindex="10" class="checkbox-label"><input class="checkbox-label-input" type="checkbox" aria-label="task completed" /><span class="checkbox-span"></span></label>
-                <span class="todo-item-text">JS tools</span>
-                <button tabindex="11" class="button close" type="button" aria-label="Close task"><i class="icon-close" ></i></button>
+                    <input id="item-input-4" class="checkbox-label-input" type="checkbox" aria-label="task completed">
+                    <label for="item-input-4" class="todo-item-text">JS tools</label>
+                    <button  class="button close" type="button" aria-label="Close task"></button>
               </div>
             </li>
           </ul>
@@ -50,21 +50,21 @@
             <div class="footer nmb-task">
               3 items left
             </div>
-            <div class="footer filter">
+            <div class="footer filter" role="radiogroup">
               <input   class="filter-input" type="radio" id="contactChoice1"
               name="filter" checked>
-              <label tabindex="12" for="contactChoice1">All</label>
+              <label for="contactChoice1">All</label>
 
-              <input  class="filter-input" type="radio" id="contactChoice2"
+              <input class="filter-input" type="radio" id="contactChoice2"
               name="filter" >
-              <label tabindex="13" for="contactChoice2">Active</label>
+              <label for="contactChoice2">Active</label>
 
               <input class="filter-input" type="radio" id="contactChoice3"
               name="filter" >
-              <label tabindex="14" for="contactChoice3">Completed</label>
+              <label for="contactChoice3">Completed</label>
             </div>
             <div class="footer footer-clear">
-              <button tabindex="15" type="button" class="clear">Clear completed</button>
+              <button type="button" class="clear">Clear completed</button>
             </div>
       </section>
       </main>
