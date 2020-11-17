@@ -73,6 +73,7 @@
 .clear:focus {
   color: black;
   border: 2px solid black;
+  box-sizing: border-box;
   background-color:rgba(0, 0, 0, 0.1);
 }
 .icon {
@@ -106,6 +107,7 @@ width: 60px;
 .close:focus{
   left: 0;
   border: 2px solid black;
+  box-sizing: border-box;
   text-indent: 0;
 }
 .todo-item:hover .close{
@@ -144,6 +146,7 @@ width: 60px;
 .form-control:focus {
   color: #2f2e2e;
   border: 2px solid black;
+  box-sizing: border-box;
 }
 .filter-input {
   position: absolute;
@@ -201,6 +204,7 @@ span.checkbox-span {
   outline: none;
   color: #ffd608;
   border: 2px solid black;
+  box-sizing: border-box;
 }
 .todo-item-text:hover {
     cursor: pointer;
@@ -235,4 +239,5 @@ span.checkbox-span {
 }
 .checkbox-label-input:focus + label:before {
   border: 2px solid black;
+  box-sizing: border-box;
 }
